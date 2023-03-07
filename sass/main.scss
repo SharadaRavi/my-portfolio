@@ -1,0 +1,36 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./variables";
+@import "./navbar";
+@import "./top-main-container";
+
+// Stop mobile scrolling left and right
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+  font-size: $fs-body;
+  font-family:  "Jost", sans-serif;
+  position: relative;
+  width: 1440px;
+  height: 1488px;
+  background-color:  $color-primary-200;
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  //border: 2px solid red;
+}
+
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+

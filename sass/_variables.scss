@@ -1,0 +1,48 @@
+
+  $color-accent-200: hsl(176.5, 82.5%, 44.9%);
+
+  $color-primary-100: hsl(0, 0%, 100%);
+  $color-primary-200: hsl(	0, 0%, 13%);
+
+  /* Font Weight */
+  $fw-regular: 400;
+  $fw-semi-bold: 500;
+  $fw-bold: 600;
+  $fw-bolder: 800;
+  $fw-header-bolder: bolder;
+
+  // /* Font Size */
+  $fs-200: 0.875rem; //14px
+  $fs-300: 1rem; //16px
+  $fs-400: 1.125rem; //18px
+  $fs-500: 1.5rem; //24px
+  $fs-600: 2.375rem; //38px
+  $fs-700: 3rem; //48px
+
+  $fs-body: var($fs-300);
+
+
+@mixin flexCenter($direction){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin btnPrimary(){
+  background: $color-primary-200;
+  border: 2px solid #14d1c6;
+  border-radius: 60px;
+  padding: 5px 20px;
+  font-size: $fs-200;
+}
+
+@mixin btnPrimaryHover(){
+  background: $color-primary-200;
+  border: 2px solid #14d1c6;
+  border-radius: 60px;
+  padding: 5px 20px;
+  font-size:  $fs-200;
+  padding: 6px 22px;
+  transition: all .5s ease;
+}
