@@ -1,0 +1,61 @@
+@import "./variables";
+
+.bottom-footer-nav {
+  border-top: 1px solid $color-primary-200;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-footer-nav{ 
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-left-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.footer-left-list li {
+  padding-right: 25px;
+}
+
+.footer-left-list .footer-nav-link {
+  text-decoration: none;
+  padding: 8px;
+  color: $color-primary-200;
+  font-weight: $fw-semi-bold;
+  letter-spacing: 1px;
+  font-size: $fs-300;
+}
+
+
+
+.footer-right-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.footer-right-list li {
+  padding-right: 20px;
+}
+
+.footer-right-list li a{
+  padding: 8px;
+}
+
+.footer-right-list li a .bi{
+  font-size: $fs-400;
+}
+
+
+.footer-right-list li:last-child {
+  padding-right: 0;
+}
+
+.social-media-link .bi {
+  font-size: $fs-300;
+}

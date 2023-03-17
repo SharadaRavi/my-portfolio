@@ -1,7 +1,8 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "./variables";
 @import "./navbar";
-@import "./top-main-container";
+@import "./main-container";
+@import "./footer";
 
 // Stop mobile scrolling left and right
 html,
@@ -9,11 +10,10 @@ body {
   width: auto !important;
   overflow-x: hidden !important;
   font-size: $fs-body;
-  font-family:  "Jost", sans-serif;
+  font-family: "Jost", sans-serif;
   position: relative;
-  width: 1440px;
-  height: 1488px;
-  background-color:  $color-primary-200;
+  min-height: 100vh;
+  background-color: $color-primary-100;
   position: relative;
 }
 
@@ -23,9 +23,7 @@ body {
   border: 0;
   box-sizing: border-box;
   font: inherit;
-  //border: 2px solid red;
 }
-
 
 ul[role="list"],
 ol[role="list"] {
@@ -34,3 +32,6 @@ ol[role="list"] {
   padding: 0;
 }
 
+.card {
+  border: none;
+}

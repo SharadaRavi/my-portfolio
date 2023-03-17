@@ -7,16 +7,14 @@ header {
 }
 
 .navbar{
-  position: absolute; 
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto;
-  z-index: 800;
 }
 
 .navbar-brand img {
-  width: 380px;
+  width: 120px;
   height: 90px;
   cursor: pointer;
 }
@@ -26,10 +24,14 @@ header {
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: $color-primary-100;
+  color: $color-primary-200;
   font-weight: $fw-semi-bold;
   letter-spacing: 1px;
   font-size: $fs-300;
+}
+
+.navbar-nav .nav-item:last-child{
+  padding-right: 0;
 }
 
 .nav-item{
@@ -37,24 +39,6 @@ header {
   padding-right: 25px;
 }
 
-.nav-item:last-child{
-  padding-right: 0;
-}
-
-.nav-item:last-child .nav-link{
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 8px;
-  padding-right: 0;
-}
-
-.contact-me-btn {
-  @include btnPrimary();
-}
-
-.contact-me-btn:hover {
-  @include btnPrimaryHover();
-}
 
 @media screen and (max-width: 1040px) {
   .nav-item{
