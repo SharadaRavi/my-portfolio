@@ -3,13 +3,12 @@
 header {
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
-.navbar{
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
+.navbar {
+  left: 0;
+  right: 0;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -19,7 +18,7 @@ header {
   cursor: pointer;
 }
 
-.navbar-nav{
+.navbar-nav {
   margin-left: auto;
 }
 
@@ -30,18 +29,23 @@ header {
   font-size: $fs-300;
 }
 
-.navbar-nav .nav-item:last-child{
+.navbar-nav .nav-item:last-child {
   padding-right: 0;
 }
 
-.nav-item{
+.nav-item {
   padding-left: 0;
   padding-right: 25px;
 }
 
-
 @media screen and (max-width: 1040px) {
-  .nav-item{
+  .nav-item {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item {
     padding-right: 10px;
   }
 }
